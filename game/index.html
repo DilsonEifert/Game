@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="css/css.css">
+    <script type="text/javascript" src="js/lib.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
+</head>
+<body>
+    <div id="time-end">
+        <input type="text" id="player">
+        <button style="width: 50px; height: 20px; margin-bottom: 0;margin-top: 5px;"
+        onclick="saveScore(this.parentElement.children[0].value); this.parentElement.style.display = 'none'">Enviar</button>
+    </div>
+    <div id="target-end">
+        <input type="text" id="player">
+        <button style="width: 50px; height: 20px; margin-bottom: 20px; margin-top: 20px;"
+        onclick="saveScore(this.parentElement.children[0].value); this.parentElement.style.display = 'none'">Enviar</button>
+    </div>
+    <div class="main" id="main">
+        <div class="game"id="game">
+            <div class="game-wrapper" id="game-wrapper">
+                <div class="score" id="score">
+                    <h2>HighScore</h2>
+                    <div id="scoreList"></div>
+                </div>
+                <div class="game-table" id="game-table">
+                    <div class="header" id="header">
+                        <div class="pontos" id="pontos">Pontos: <span class="pval" id="pval">0</span></div>
+                        <div class="timer" id="timer">Tempo: <span class="stempo" id="stempo">00:03:000</span></div>
+                        <div class="nivel" id="nivel">Nível: <span class="nval" id="nval">0</span></div>
+                    </div>
+                    <div class="game-content" id="game-content">
+                        <h1 class="title" id="title">Clique em iniciar</h1>
+                        <div class="game-board" id="game-board">
+                            <div class="table-wrapper  flicker" id="table-wrapper">
+                                
+                            </div>
+                        </div>
+                        <button class="iniciar" onclick="validate('begin')" id="iniciar">Iniciar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

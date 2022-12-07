@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Peralta&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.game{
+    padding-top: 70px;
+}
+.game-wrapper{
+    width: 700px;
+    height: 500px;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.score{
+    width: 250px;
+    border-radius: 5px 0 0 5px;
+    background: linear-gradient(0deg, rgba(22,38,124,1) 0%, rgba(58,86,124,1) 33%, rgba(51,57,86,1) 100%);
+}
+
+.game-table{
+    width: 450px;
+}
+
+.header{
+    font-size: 18px;
+    width: 425px;
+    height: 54px;
+    margin: 0 auto;
+    margin-top: 14px;
+    background-color: #D3F30C;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Peralta', cursive;
+}
+
+.pval{
+    color: blue;
+}
+
+.nval{
+    color: red;
+}
+
+.game-content{
+    width: 410px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+h1{
+    font-family: 'Peralta', cursive;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+h2{
+    margin-top: 53px;
+    margin-bottom: 33px ;
+    font-family: 'Peralta', cursive;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+p{
+    font-family: 'Peralta', cursive;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}
+
+.flicker{
+    animation: flicker 0.5s ease alternate infinite;
+}
+
+.game_item_style{
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    border-radius: 5px;
+}
+
+.table-wrapper{
+    margin: 0 auto;
+    margin-top: 39px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 175px;
+    gap: 9px;
+}       
+
+.iniciar{
+    
+    margin: 0 auto;
+    margin-top: 42px;
+    width: 98px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3A567C;
+    color: white;
+    font-family: 'Peralta', cursive;
+    display: block;
+}
+
+#target-end{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    position: absolute; background-image: url('../img/alvo.jpg');
+    width: 340px;
+    height: 190px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 2px 2px;
+    border-radius: 5px;
+    z-index: 1;
+    text-align: right;
+    padding: 10px 10px 0 0;
+    font-weight: 600;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#time-end{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute; background-image: url('../img/time.jpg');
+    width: 340px;
+    height: 190px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 2px 2px;
+    border-radius: 5px;
+    z-index: 1;
+    text-align: right;
+    padding: 10px 10px 0 0;
+    font-weight: 600;
+    background-position: center;
+    background-repeat: no-repeat;
+}
